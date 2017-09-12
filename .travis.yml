@@ -1,6 +1,0 @@
-language: swift # or objective-c
-osx_image: xcode8
-script:
-  - xcodebuild -scheme TwitterStream -workspace TwitterStream.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=10.3' build test
-after_success:
-  - bash <(curl -s https://codecov.io/bash) -t 9ba59adf-7bad-4501-949d-704ff9e02609
