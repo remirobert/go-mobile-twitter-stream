@@ -4,10 +4,16 @@
 [![codecov](https://codecov.io/gh/remirobert/go-mobile-twitter-stream/branch/master/graph/badge.svg)](https://codecov.io/gh/remirobert/go-mobile-twitter-stream)
 [![codebeat](https://codebeat.co/badges/8bdf5923-d605-4755-a586-66b7a69ec71b)](https://codebeat.co/projects/github-com-remirobert-go-mobile-twitter-stream-master)
 
-
 Go-mobile cross plateform framework, to get a live twitter stream.
 
-iOS client : 
+# Build the framework
+First you need to install go-mobile, then:
+```sh
+gomobile bind --target=ios twitter-stream-framework/
+```
+That will generate a framework **Twitter.framework**
+
+# iOS client
  - AsyncDisplayKit / Texture
  - SnapshotTests and unit tests
  - Wireframe, to encapsulate UI API like UIKit, so the coordinators can be used on OSX, TVOS and iOS
