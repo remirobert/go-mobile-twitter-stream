@@ -1,0 +1,8 @@
+framework module "Twitter" {
+	header "ref.h"
+    header "Twitter.objc.h"
+    header "Universe.objc.h"
+    header "Twitter.h"
+
+    export *
+}

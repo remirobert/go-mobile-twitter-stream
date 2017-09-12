@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>track</key>
+	<string>nintendo</string>
+	<key>token</key>
+	<string>509945881-PZM9CkALVEdpu1L61AGnnOpk1GjWz4gXBTdzesk2</string>
+	<key>token-secret</key>
+	<string>6IMW2FjJr6f9BFrVGvPnemoFKDBUyYFcHXT1FpwcII3Al</string>
+	<key>consumer</key>
+	<string>bcZ2CJoYICvAlpealHpxYE7mn</string>
+	<key>consumer-secret</key>
+	<string>9UGDKrz009aVE1YB6yoKbOMVvOF0E3ZNehsDQbaTeBVH7wrvrd</string>
+</dict>
+</plist>
