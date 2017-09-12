@@ -32,12 +32,20 @@
 
 // If Yoga is available, make it available anywhere we use ASAvailability.
 // This reduces Yoga-specific code in other files.
+// NOTE: Yoga integration is experimental and not fully tested. Use with caution and test layouts carefully.
 #ifndef YOGA_HEADER_PATH
-  #define YOGA_HEADER_PATH <Yoga/Yoga.h>
+  #define YOGA_HEADER_PATH <yoga/Yoga.h>
 #endif
 
 #ifndef YOGA
   #define YOGA __has_include(YOGA_HEADER_PATH)
+#endif
+
+// When enabled, use ASTextNode2 for ALL instances of ASTextNode.
+// This includes what ASButtonNode uses internally, as well as all app references to ASTextNode.
+// See ASTextNode+Beta.h declaration of ASTextNodeExperimentOptions for more details.
+#ifndef ASTEXTNODE_EXPERIMENT_GLOBAL_ENABLE
+  #define ASTEXTNODE_EXPERIMENT_GLOBAL_ENABLE 0
 #endif
 
 #define AS_PIN_REMOTE_IMAGE __has_include(<PINRemoteImage/PINRemoteImage.h>)

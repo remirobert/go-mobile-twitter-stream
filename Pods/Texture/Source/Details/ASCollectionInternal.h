@@ -32,6 +32,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, readonly) ASRangeController *rangeController;
 
 /**
+ * The change set that we're currently building, if any.
+ */
+@property (nonatomic, strong, nullable, readonly) _ASHierarchyChangeSet *changeSet;
+
+/**
+ * @see ASCollectionNode+Beta.h for full documentation.
+ */
+@property (nonatomic, assign) BOOL usesSynchronousDataLoading;
+
+/**
  * Attempt to get the view-layer index path for the item with the given index path.
  *
  * @param indexPath The index path of the item.

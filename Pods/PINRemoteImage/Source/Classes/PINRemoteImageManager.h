@@ -121,6 +121,16 @@ typedef void(^PINRemoteImageManagerAuthenticationChallengeCompletionHandler)(NSU
  */
 typedef void(^PINRemoteImageManagerAuthenticationChallenge)(NSURLSessionTask * __nullable task, NSURLAuthenticationChallenge * __nonnull challenge, PINRemoteImageManagerAuthenticationChallengeCompletionHandler __nullable aHandler);
 
+
+/**
+ Request configuration handler. Used to modify a network request before it is executed.
+ Useful for adding custom, per-request headers.
+ 
+ @param request The request about to be executed
+ */
+typedef NSURLRequest * _Nonnull(^PINRemoteImageManagerRequestConfigurationHandler)(NSURLRequest * __nonnull request);
+
+
 /**
  Handler called for many PINRemoteImage tasks providing the progress of the download.
  
@@ -187,10 +197,19 @@ typedef void(^PINRemoteImageManagerProgressDownload)(int64_t completedBytes, int
 /**
  * Sets a custom header to be included in every request. Headers set from this method will override any header from NSURLSessionConfiguration.
  *
+ * @deprecated Use NSURLSessionConfiguration.HTTPAdditionalHeaders instead
  * @param value A value for the header. Pass in nil to remove a previously set value.
  * @param header A string field for header.
+
  */
-- (void)setValue:(nullable NSString *)value forHTTPHeaderField:(nullable NSString *)header;
+- (void)setValue:(nullable NSString *)value forHTTPHeaderField:(nullable NSString *)header __attribute__((deprecated));
+
+/**
+ Sets the Request Configuration Block.
+ 
+ @param configurationBlock A PINRemoteImageManagerRequestConfigurationHandler block.
+ */
+- (void)setRequestConfiguration:(nullable PINRemoteImageManagerRequestConfigurationHandler)configurationBlock;
 
 /**
  Set the Authentication Challenge Block.
@@ -240,7 +259,7 @@ typedef void(^PINRemoteImageManagerProgressDownload)(int64_t completedBytes, int
 /**
  Set the maximum number of concurrent downloads.
  
- @param maxNumberOfConcurrentDownloads The maximum number of concurrent downloads. Defaults to 10.
+ @param maxNumberOfConcurrentDownloads The maximum number of concurrent downloads. Defaults to 10, maximum 65535.
  @param completion Completion to be called once maxNumberOfConcurrentDownloads is set.
  */
 - (void)setMaxNumberOfConcurrentDownloads:(NSInteger)maxNumberOfConcurrentDownloads

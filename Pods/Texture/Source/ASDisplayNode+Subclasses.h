@@ -122,7 +122,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @warning Subclasses must not override this; it returns the last cached layout and is never expensive.
  */
-@property (nullable, nonatomic, readonly, assign) ASLayout *calculatedLayout;
+@property (nullable, nonatomic, readonly, strong) ASLayout *calculatedLayout;
 
 #pragma mark - View Lifecycle
 /** @name View Lifecycle */
@@ -514,7 +514,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-#define ASDisplayNodeAssertThreadAffinity(viewNode)   ASDisplayNodeAssert(!viewNode || ASDisplayNodeThreadIsMain() || !(viewNode).nodeLoaded, @"Incorrect display node thread affinity - this method should not be called off the main thread after the ASDisplayNode's view or layer have been created")
-#define ASDisplayNodeCAssertThreadAffinity(viewNode) ASDisplayNodeCAssert(!viewNode || ASDisplayNodeThreadIsMain() || !(viewNode).nodeLoaded, @"Incorrect display node thread affinity - this method should not be called off the main thread after the ASDisplayNode's view or layer have been created")
+#define ASDisplayNodeAssertThreadAffinity(viewNode)   ASDisplayNodeAssert(!viewNode || ASMainThreadAssertionsAreDisabled() || ASDisplayNodeThreadIsMain() || !(viewNode).nodeLoaded, @"Incorrect display node thread affinity - this method should not be called off the main thread after the ASDisplayNode's view or layer have been created")
+#define ASDisplayNodeCAssertThreadAffinity(viewNode) ASDisplayNodeCAssert(!viewNode || ASMainThreadAssertionsAreDisabled() || ASDisplayNodeThreadIsMain() || !(viewNode).nodeLoaded, @"Incorrect display node thread affinity - this method should not be called off the main thread after the ASDisplayNode's view or layer have been created")
 
 NS_ASSUME_NONNULL_END

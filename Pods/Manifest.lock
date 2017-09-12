@@ -5,27 +5,27 @@ PODS:
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
   - Nimble (7.0.1)
-  - PINCache (3.0.1-beta.4):
-    - PINCache/Arc-exception-safe (= 3.0.1-beta.4)
-    - PINCache/Core (= 3.0.1-beta.4)
-  - PINCache/Arc-exception-safe (3.0.1-beta.4):
+  - PINCache (3.0.1-beta.5):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.5)
+    - PINCache/Core (= 3.0.1-beta.5)
+  - PINCache/Arc-exception-safe (3.0.1-beta.5):
     - PINCache/Core
-  - PINCache/Core (3.0.1-beta.4):
+  - PINCache/Core (3.0.1-beta.5):
     - PINOperation (= 1.0.3)
   - PINOperation (1.0.3)
-  - PINRemoteImage/Core (3.0.0-beta.9):
+  - PINRemoteImage/Core (3.0.0-beta.11):
     - PINOperation
-  - PINRemoteImage/iOS (3.0.0-beta.9):
+  - PINRemoteImage/iOS (3.0.0-beta.11):
     - PINRemoteImage/Core
-  - PINRemoteImage/PINCache (3.0.0-beta.9):
-    - PINCache (= 3.0.1-beta.4)
+  - PINRemoteImage/PINCache (3.0.0-beta.11):
+    - PINCache (= 3.0.1-beta.5)
     - PINRemoteImage/Core
   - Quick (1.1.0)
-  - Texture (2.3.3):
-    - Texture/PINRemoteImage (= 2.3.3)
-  - Texture/Core (2.3.3)
-  - Texture/PINRemoteImage (2.3.3):
-    - PINRemoteImage/iOS (= 3.0.0-beta.9)
+  - Texture (2.4):
+    - Texture/PINRemoteImage (= 2.4)
+  - Texture/Core (2.4)
+  - Texture/PINRemoteImage (2.4):
+    - PINRemoteImage/iOS (= 3.0.0-beta.11)
     - PINRemoteImage/PINCache
     - Texture/Core
 
@@ -38,12 +38,12 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Nimble: 657d000e11df8aebe27cdaf9d244de7f30ed87f7
-  PINCache: a89c8f609232afac77128557bd12c861844423d7
+  PINCache: 98e7b1ef782824ad231ade51987c218b758c30d8
   PINOperation: ac23db44796d4a564ecf9b5ea7163510f579b71d
-  PINRemoteImage: e4e02e15a6f96cedbcef2abf1c9c1228dc9897d7
+  PINRemoteImage: d71988f11914a050d6d4cf51efc4ad1de8c0a9d8
   Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
-  Texture: e01a363c2b6567e1ff27a878995e0d271fbb424c
+  Texture: a5526314780eab35f642d956627f09316b9514e8
 
-PODFILE CHECKSUM: 82fc39c879e14219cade2c65761f7c5f73a4e1f3
+PODFILE CHECKSUM: d9f324f384b0b890abfbcb7e66ba33a8817b35c2
 
 COCOAPODS: 1.3.1
