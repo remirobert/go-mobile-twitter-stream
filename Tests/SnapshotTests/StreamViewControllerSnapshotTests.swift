@@ -30,7 +30,6 @@ class StreamViewControllerSnapshotTests: FBSnapshotTestCase {
         let interactor = MockStreamInterator(tweets: tweets)
         let streamViewController = StreamViewController(streamInterator: interactor)
         _ = streamViewController.view
-        interactor.start()
         streamViewController.node.reloadData()
         streamViewController.node.recursivelyEnsureDisplaySynchronously(true)
         FBSnapshotVerifyView(streamViewController.view)
