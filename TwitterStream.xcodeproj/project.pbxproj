@@ -187,7 +187,6 @@
 				BB5360CC1F3E263100C7C00A /* Info.plist */,
 				BB5360C91F3E263100C7C00A /* LaunchScreen.storyboard */,
 			);
-			name = Ressources;
 			path = Ressources;
 			sourceTree = "<group>";
 		};
@@ -198,7 +197,6 @@
 				BB5360D41F3E352200C7C00A /* View.swift */,
 				BB5360D91F3E36CB00C7C00A /* Window.swift */,
 			);
-			name = Wireframe;
 			path = Wireframe;
 			sourceTree = "<group>";
 		};
@@ -208,7 +206,6 @@
 				BB5360D71F3E355900C7C00A /* View+UIKit.swift */,
 				BB5360DB1F3E36EC00C7C00A /* Window+UIKit.swift */,
 			);
-			name = UIKit;
 			path = UIKit;
 			sourceTree = "<group>";
 		};
@@ -218,7 +215,6 @@
 				BB5360DE1F3E37DC00C7C00A /* AppCoordinator.swift */,
 				BB5360E01F3E37E700C7C00A /* StreamCoordinator.swift */,
 			);
-			name = Coordinators;
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
@@ -228,7 +224,6 @@
 				BB5360F81F3E4D2700C7C00A /* Implementations */,
 				BB5360F61F3E4D1800C7C00A /* StreamInteractor.swift */,
 			);
-			name = Interactors;
 			path = Interactors;
 			sourceTree = "<group>";
 		};
@@ -237,7 +232,6 @@
 			children = (
 				BB5360ED1F3E4A2900C7C00A /* Stream */,
 			);
-			name = Screens;
 			path = Screens;
 			sourceTree = "<group>";
 		};
@@ -250,7 +244,6 @@
 				BBAE88AA1F67CBCE003F2908 /* TextAttributes.swift */,
 				BBEC14991F3F43AE00D9BA06 /* TweetCellNode.swift */,
 			);
-			name = Texture;
 			path = Texture;
 			sourceTree = "<group>";
 		};
@@ -260,7 +253,6 @@
 				BB5360E61F3E390C00C7C00A /* Texture */,
 				BB5360E41F3E38FC00C7C00A /* StreamView.swift */,
 			);
-			name = Stream;
 			path = Stream;
 			sourceTree = "<group>";
 		};
@@ -271,7 +263,6 @@
 				BB5360F91F3E4D3900C7C00A /* TwitterStreamInteractor.swift */,
 				BBC13FE21F3E559D0050A6F9 /* TwitterTweet+Tweet.swift */,
 			);
-			name = Implementations;
 			path = Implementations;
 			sourceTree = "<group>";
 		};
@@ -281,7 +272,6 @@
 				BB5361001F3E54DE00C7C00A /* Tweet.swift */,
 				BBC54A091F3F4C4100E7B5E1 /* User.swift */,
 			);
-			name = Entities;
 			path = Entities;
 			sourceTree = "<group>";
 		};
@@ -305,7 +295,6 @@
 				BBAE88C61F67D1FF003F2908 /* StreamViewControllerSnapshotTests.swift */,
 				BBAE88C21F67D174003F2908 /* TweetCellNodeSnapshotTests.swift */,
 			);
-			name = SnapshotTests;
 			path = SnapshotTests;
 			sourceTree = "<group>";
 		};
@@ -758,6 +747,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 44Q2J6374R;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.remirobert.Tests;
@@ -773,6 +763,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 44Q2J6374R;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.remirobert.Tests;
