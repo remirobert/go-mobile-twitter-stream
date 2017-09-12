@@ -5,5 +5,12 @@
 [![codebeat](https://codebeat.co/badges/8bdf5923-d605-4755-a586-66b7a69ec71b)](https://codebeat.co/projects/github-com-remirobert-go-mobile-twitter-stream-master)
 
 
+Go-mobile cross plateform framework, to get a live twitter stream.
 
-Golang mobile experimentation on iOS. Simple twitter stream client
+iOS client : 
+ - AsyncDisplayKit / Texture
+ - SnapshotTests and unit tests
+ - Wireframe, to encapsulate UI API like UIKit, so the coordinators can be used on OSX, TVOS and iOS
+
+
+![](https://user-images.githubusercontent.com/3276768/30344657-80f6f1ea-9802-11e7-9c4a-e8e3c49c6148.gif)
