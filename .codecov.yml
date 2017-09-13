@@ -1,5 +1,3 @@
-coverage:
-  ignore:
-    - Examples/*
-    - Tests/*
-    - Pods/*
+ignore:
+  - Pods
+  - Tests
